@@ -1,4 +1,4 @@
-# Pokédex Vanilla
+# Pokédex 
 
 Aplicación web sencilla que consume PokeAPI usando únicamente HTML, CSS y JavaScript.
 
