@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokédex para Principiantes</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="encabezado">
+      <h1 class="titulo">Mi Pokédex</h1>
+      <form id="formulario-busqueda" class="buscador">
+        <input
+          type="text"
+          id="entrada-busqueda"
+          class="entrada"
+          placeholder="Buscar Pokémon..."
+          autocomplete="off"
+        />
+        <button type="submit" class="boton">Buscar</button>
+      </form>
+    </header>
+
+    <main class="principal">
+      <section class="controles">
+        <div class="paginacion">
+          <button id="boton-anterior" class="boton" disabled>← Anterior</button>
+          <span id="indicador-pagina" class="indicador">Página 1</span>
+          <button id="boton-siguiente" class="boton">Siguiente →</button>
+        </div>
+      </section>
+
+      <section id="contenedor-lista" class="grid"></section>
+
+      <div id="capa-carga" class="capa-carga">
+        <div class="rueda"></div>
+      </div>
+    </main>
+
+    <div id="modal" class="modal" aria-hidden="true">
+      <div class="modal-contenido">
+        <button id="modal-cerrar" class="modal-cerrar">×</button>
+        <div id="modal-cuerpo" class="modal-cuerpo"></div>
+      </div>
+    </div>
+
+    <footer class="pie">
+      <p>
+        2024 Mi Pokédex | Datos de
+        <a href="https://pokeapi.co/" target="_blank">PokeAPI</a>
+      </p>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
